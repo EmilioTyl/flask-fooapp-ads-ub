@@ -18,11 +18,15 @@ from .forms import ProductForm
 import bson
 
 import json
+import urllib
 
 app = Flask(__name__)
 
+#app.config['MONGO_DBNAME'] = 'foodb'
+#app.config['MONGO_URI'] = 'mongodb://localhost:27017/foodb'
+
 app.config['MONGO_DBNAME'] = 'test'
-app.config['MONGO_URI'] =  "mongodb+srv://emilio.tyl@gmail.com:wS2t$r23NV58xUC@cluster0-xi3un.mongodb.net/test"
+app.config['MONGO_URI'] =  "mongodb+srv://"+ urllib.parse.quote("tylio")+":"+urllib.parse.quote("Hola882y1b")+"@cluster0-xi3un.mongodb.net/test"
 
 mongo = PyMongo(app)
 
