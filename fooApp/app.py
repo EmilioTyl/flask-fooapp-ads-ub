@@ -53,7 +53,7 @@ def products_list():
     products=products)
 
 ## USER
-app.config['SECRET_KEY'] = 'enydM2ANhdcoKwdVa0jWvEsbPFuQpMjf' # Create your own.
+app.config['SECRET_KEY'] = 'enydM2ANhdcoKwdV88jWvEsbPFuQpMjf' # Create your own.
 app.config['SESSION_PROTECTION'] = 'strong'
 
 
